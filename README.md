@@ -1,0 +1,5 @@
+## Penjelasan Status Data Cuaca & Mode Offline
+
+1. **Cache-Segar vs Cache-Basi**: Cache-segar adalah salinan data cuaca lokal yang umurnya masih di bawah batas TTL (30 menit) sehingga langsung digunakan tanpa internet. Sebaliknya, cache-basi adalah data tersimpan yang umurnya sudah melewati batas TTL dan digunakan sebagai cadangan darurat (*fallback*) saat koneksi internet terputus atau mode pesawat aktif.
+2. **First-Run Offline**: Kondisi ketika pengguna membuka aplikasi atau memilih suatu kota dalam keadaan offline, namun data kota tersebut belum pernah diunduh atau disimpan sama sekali ke memori lokal.
+3. **Pentingnya Label Status Data**: Label status data (seperti banner hijau, oranye, dan merah) sangat penting untuk transparansi informasi kepada pengguna. Dengan label ini, pengguna mengetahui secara jujur apakah suhu yang tampil merupakan data terkini satelit, data perkiraan lama, atau peringatan data belum tersedia.
